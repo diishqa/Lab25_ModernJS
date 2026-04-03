@@ -373,39 +373,39 @@ delay(1000)
 // displayUserSettings({ theme: "dark", fontSize: 16});
 // displayUserSettings({notifications: false});
 // displayUserSettings({});
-const order = {
-    orderId: 12345,
-    customer: {
-        name: "Диана Кузьмина",
-        email: "diana@example.com",
-        phone: "+7(000)1234567"
-    },
-    shipping: {
-            city: "Волжский",
-            street: "Ленина",
-    },
-    payment: {
-        method: "Карта",
-        status: "Оплачен"
-    }
-};
-function displayOrder(order) {
-    console.log(`заказ: ${order.orderId ?? "---"}`);
-    const customerName = order.customer?.name ?? "---";
-    const customerEmail = order.customer?.email ?? "---";
-    const customerPhone = order.customer?.phone ?? "---";
-    console.log("Клиент:");
-    console.log(`Имя: ${customerName}`);
-    console.log(`Email: ${customerEmail}`);
-    console.log(`Телефон: ${customerPhone}`);
-    const street = order.shipping?.address?.street ?? "---";
-    const city = order.shipping?.address?.city ?? "---";
-    console.log("Доставка:");
-    console.log(`Адрес: ${street}, ${city}, ${zipCode}`);
-    const paymentMethod = order.payment?.method ?? "---";
-    const paymentStatus = order.payment?.status ?? "---";
-    console.log("Оплата:");
-    console.log(`Метод: ${paymentMethod}`);
-    console.log(`Статус: ${paymentStatus}`);
-}
-displayOrder(order);
+// const order = {
+//     orderId: 12345,
+//     customer: {
+//         name: "Диана Кузьмина",
+//         email: "diana@example.com",
+//         phone: "+7(000)1234567"
+//     },
+//     shipping: {
+//             city: "Волжский",
+//             street: "Ленина",
+//     },
+//     payment: {
+//         method: "Карта",
+//         status: "Оплачен"
+//     }
+// };
+// function displayOrder(order) {
+//     console.log(`заказ: ${order.orderId ?? "---"}`);
+//     const customerName = order.customer?.name ?? "---";
+//     const customerEmail = order.customer?.email ?? "---";
+//     const customerPhone = order.customer?.phone ?? "---";
+//     console.log("Клиент:");
+//     console.log(`Имя: ${customerName}`);
+//     console.log(`Email: ${customerEmail}`);
+//     console.log(`Телефон: ${customerPhone}`);
+//     const street = order.shipping?.address?.street ?? "---";
+//     const city = order.shipping?.address?.city ?? "---";
+//     console.log("Доставка:");
+//     console.log(`Адрес: ${street}, ${city}, ${zipCode}`);
+//     const paymentMethod = order.payment?.method ?? "---";
+//     const paymentStatus = order.payment?.status ?? "---";
+//     console.log("Оплата:");
+//     console.log(`Метод: ${paymentMethod}`);
+//     console.log(`Статус: ${paymentStatus}`);
+// }
+// displayOrder(order);
